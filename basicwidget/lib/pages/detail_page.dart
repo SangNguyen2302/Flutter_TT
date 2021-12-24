@@ -15,6 +15,20 @@ class DetailsMoviePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('${movieModel.name}'),
+        actions:<Widget> [
+          IconButton(
+            icon: Icon(Icons.favorite,),
+
+            color: Colors.red,
+            onPressed: () {  },
+          ),
+          IconButton(
+            icon: Icon(Icons.ios_share,),
+
+            color: Colors.red,
+            onPressed: () {  },
+          ),
+        ],
         backwardsCompatibility: true,
       ),
       body: Column(
